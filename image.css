@@ -1,9 +1,8 @@
-
 #placeholder {
   width: 200px;
   height: 150px;
   border-radius: 20px;
-  background-color: transparent;
+  background-color: rgb(56, 54, 54);
 }
 body {
   font-family: "Helvetica", "Arial", serif;
