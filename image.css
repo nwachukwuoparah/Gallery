@@ -11,9 +11,24 @@ body {
   border-radius: 45px;
   background-color: gray;
 }
+#imagegallery li {
+  margin: 10px;
+  height: 40px;
+  width: 40px;
+  padding: 0.1px;
+  border-radius: 50px;
+  box-shadow: 5px 10px 20px rgba(0, 0, 5, 0.79), 0 6px 6px rgba(0, 0, 5, 0.53);
+}
+#imagegallery li:hover {
+  transform: scale(1.1);
+}
 #imagegallery {
+  margin: 0px;
   padding: 1px;
   box-shadow: 5px 10px 20px rgba(0, 0, 5, 0.79), 0 6px 6px rgba(0, 0, 5, 0.53);
+}
+#imagegallery li:hover {
+  transform: scale(1.1);
 }
 #placeholder:hover {
   transform: scale(1.1);
