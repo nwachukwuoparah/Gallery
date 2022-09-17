@@ -46,11 +46,9 @@ function prepareGallery() {
     links[i].onclick = function () {
       return showPic(this) ? false : true;
     };
-    links[i].onkeypress = links[i].onclick;
   }
 }
 
-// window.onload = prepareGallery;
 function showPic(whichpic) {
   if (!document.getElementById("placeholder")) return false;
   let source = whichpic.href;
