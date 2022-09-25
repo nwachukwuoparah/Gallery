@@ -1,5 +1,5 @@
-import { insertAfter } from "../export/insertAfter.js";
-import { addLoadEvent } from "../export/addLoadEvent.js";
+import { insertAfter } from "./insertAfter.js";
+import { addLoadEvent } from "./addLoadEvent.js";
 
 function preparePlaceholder() {
   if (!document.createElement) return false;
