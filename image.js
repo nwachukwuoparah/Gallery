@@ -1,22 +1,5 @@
-function addLoadEvent(func) {
-  var oldonload = window.onload;
-  if (typeof window.onload != "function") {
-    window.onload = func;
-  } else {
-    window.onload = function () {
-      oldonload();
-      func();
-    };
-  }
-}
-function insertAfter(newElement, targetElement) {
-  let parent = targetElement.parentNode;
-  if (parent.lastChild == targetElement) {
-    parent.appendChild(newElement);
-  } else {
-    parent.insertBefore(newElement, targetElement.nextSibling);
-  }
-}
+import { insertAfter } from "../export/insertAfter.js";
+import { addLoadEvent } from "../export/addLoadEvent.js";
 
 function preparePlaceholder() {
   if (!document.createElement) return false;
